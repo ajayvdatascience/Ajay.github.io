@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajay Vasudevan | Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Ajay Vasudevan — aspiring Business Analyst and AI Engineer specializing in Python, SQL, data analysis, machine learning, and business intelligence." />
+  <meta property="og:title" content="Ajay Vasudevan | Data Science Portfolio" />
+  <meta property="og:description" content="Aspiring Business Analyst and AI Engineer with skills in Python, SQL, Power BI, Machine Learning, and Generative AI." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#f8f9fb',
+            foreground: '#1a1f2e',
+            card: '#ffffff',
+            muted: '#5e6575',
+            accent: '#2563eb',
+            border: 'rgba(26,31,46,0.08)',
+            success: '#22c55e'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.16,1,0.3,1) both; }
+    .line-grow { animation: lineGrow 1.2s cubic-bezier(0.16,1,0.3,1) both; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes lineGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  </style>
+</head>
+<body class="bg-background text-foreground font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="font-mono text-xs font-bold tracking-tighter">AJAY_VASUDEVAN.DS</div>
+      <div class="flex gap-8 items-center">
+        <a href="#projects" class="text-xs font-mono uppercase tracking-widest text-muted hover:text-accent transition-colors">(01) Projects</a>
+        <a href="#skills" class="text-xs font-mono uppercase tracking-widest text-muted hover:text-accent transition-colors">(02) Skills</a>
+        <a href="mailto:ajayvasudevan.cbe@gmail.com" class="bg-foreground text-background px-4 py-2 text-xs font-mono rounded-full hover:bg-accent transition-colors">Contact_Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6">
+    <!-- Hero -->
+    <section class="py-24 md:py-32 grid md:grid-cols-[1fr_300px] gap-12 items-end">
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <span class="font-mono text-accent text-sm fade-in-up" style="animation-delay:100ms">// ASPIRING BUSINESS ANALYST & AI ENGINEER</span>
+          <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-balance fade-in-up" style="animation-delay:200ms">Ajay Vasudevan</h1>
+        </div>
+        <p class="max-w-[50ch] text-lg text-muted text-pretty fade-in-up" style="animation-delay:300ms">
+          BSc Data Science student at RVS College. Specialized in building ETL pipelines, interactive BI dashboards, and machine learning models for real-world impact.
+        </p>
+      </div>
+      <div class="hidden md:block fade-in-up" style="animation-delay:400ms">
+        <div class="p-6 border border-border rounded-2xl bg-card/50 space-y-4">
+          <div class="space-y-1">
+            <div class="text-[10px] font-mono text-muted uppercase">Current Location</div>
+            <div class="text-sm font-medium">Coimbatore, India</div>
+          </div>
+          <div class="space-y-1">
+            <div class="text-[10px] font-mono text-muted uppercase">Academic Standing</div>
+            <div class="text-sm font-medium">85% PERCENTAGE</div>
+          </div>
+          <div class="pt-4 border-t border-border">
+            <div class="flex gap-3 items-center">
+              <div class="size-2 rounded-full bg-success animate-pulse"></div>
+              <span class="text-[10px] font-mono uppercase">Available for Internships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-px w-full bg-border origin-left line-grow"></div>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 space-y-16">
+      <div class="flex justify-between items-baseline">
+        <h2 class="text-3xl font-bold tracking-tight italic">Selected Works</h2>
+        <span class="font-mono text-xs text-muted">[2024 - PRESENT]</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Project 1 -->
+        <div class="group space-y-6 fade-in-up" style="animation-delay:100ms">
+          <div class="w-full aspect-[16/10] bg-secondary rounded-xl overflow-hidden outline outline-1 -outline-offset-1 outline-black/5 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+            <img src="https://cdn.prod.website-files.com/607fd4acc7545e11ee697aa7/65f46f972767b34ab222569d_3110238_waitrosepartnersgenericshopimage_156757.jpg" alt="Waitrose Retail Data Engineering project visualization" width="1024" height="640" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold">Waitrose Retail Data Engineering</h3>
+              <a href="https://github.com/ajayvasudevancbe-Datascience/Waitrose-Retail-Data-Engineering" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline font-mono text-xs">SRC_CODE</a>
+            </div>
+            <p class="text-muted text-sm leading-relaxed">End-to-end retail pipeline using Python & SQL. Collected, cleaned, and transformed product datasets into structured business insights for inventory analysis.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-card border border-border rounded text-[10px] font-mono">Python</span>
+              <span class="px-2 py-1 bg-card border border-border rounded text-[10px] font-mono">SQL</span>
+              <span class="px-2 py-1 bg-card border border-border rounded text-[10px] font-mono">ETL</span>
+              <span class="px-2 py-1 bg-card border border-border rounded text-[10px] font-mono">Pandas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="group space-y-6 fade-in-up" style="animation-delay:200ms">
+          <div class="w-full aspect-[16/10] bg-secondary rounded-xl overflow-hidden outline outline-1 -outline-offset-1 outline-black/5 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+            <img src="data:image/jpeg;base64,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" alt="Ice Cream Sales Analytics Dashboard" width="1024" height="640" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold">Ice Cream Sales Analytics</h3>
+              <a href="https://github.com/ajayvasudevancbe-Datascience/Ice-Cream-Sales-Analytics-Dashboard" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline font-mono text-xs">DASHBOARD</a>
+            </div>
+            <p class="text-muted text-sm leading-relaxed">Interactive Power BI dashboard analyzing customer trends and revenue performance. Used Power Query and DAX for sophisticated KPI modeling.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-card border border-border rounded text-[10px] font-mono">Power BI</span>
+              <span class="px-2 py-1 bg-card border border-border rounded text-[10px] font-mono">DAX</span>
+              <span class="px-2 py-1 bg-card border border-border rounded text-[10px] font-mono">Excel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 bg-foreground text-background -mx-6 px-6 rounded-t-[40px]">
+      <div class="max-w-6xl mx-auto space-y-16">
+        <div class="flex flex-col md:flex-row justify-between gap-8 items-start">
+          <h2 class="text-4xl font-bold tracking-tighter">Technical<br />Core</h2>
+          <p class="max-w-md text-background/60 text-sm font-mono">Standardizing the stack across Data Engineering, Business Intelligence, and Artificial Intelligence domains.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-6">
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase tracking-widest text-background/40 border-b border-background/10 pb-2">Languages</h4>
+            <ul class="space-y-2 font-bold text-lg"><li>Python</li><li>SQL (MySQL, Mongo)</li></ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase tracking-widest text-background/40 border-b border-background/10 pb-2">Analysis</h4>
+            <ul class="space-y-2 font-bold text-lg"><li>Power BI / Tableau</li><li>Pandas / NumPy</li><li>Advanced Excel</li></ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase tracking-widest text-background/40 border-b border-background/10 pb-2">AI / ML</h4>
+            <ul class="space-y-2 font-bold text-lg"><li>Generative AI</li><li>Prompt Engineering</li><li>Machine Learning</li></ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-xs font-mono uppercase tracking-widest text-background/40 border-b border-background/10 pb-2">Tools</h4>
+            <ul class="space-y-2 font-bold text-lg"><li>Git / GitHub</li><li>Jupyter / VS Code</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="py-24 grid md:grid-cols-2 gap-24">
+      <div class="space-y-12">
+        <h3 class="text-xs font-mono uppercase tracking-widest text-muted">Education_History</h3>
+        <div class="space-y-8">
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute -left-[5px] top-0 size-2 rounded-full bg-accent"></div>
+            <div class="text-sm font-bold">BSc Data Science</div>
+            <div class="text-sm text-muted">RVS College of Arts and Science</div>
+            <div class="text-xs font-mono mt-2">2024 — 2027 | 85% PERCENTAGE</div>
+          </div>
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute -left-[5px] top-0 size-2 rounded-full bg-border"></div>
+            <div class="text-sm font-bold">Secondary Education</div>
+            <div class="text-sm text-muted">MDN Future CBSE School</div>
+            <div class="text-xs font-mono mt-2">2023 — 2024 | 61.9% PERCENTAGE</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-12">
+        <h3 class="text-xs font-mono uppercase tracking-widest text-muted">Certifications</h3>
+        <div class="p-6 border border-border rounded-xl bg-card space-y-4">
+          <div class="flex justify-between items-center">
+            <div>
+              <div class="text-sm font-bold">Data Science Professional</div>
+              <div class="text-[10px] font-mono text-muted">Excel, Python, Visualization</div>
+            </div>
+            <a href="file:///E:/DS/Certificate/Data%20Science%20Course%20(Excel,python).pdf" target="_blank" rel="noopener noreferrer" class="size-8 grid place-items-center bg-background rounded-full border border-border hover:bg-accent hover:text-accent-foreground transition-colors" aria-label="Open Data Science certificate"><span class="text-xs">↗</span></a>
+          </div>
+          <p class="text-xs text-muted">Comprehensive training in data cleaning, exploratory analysis, and automated reporting structures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer class="py-24 border-t border-border flex flex-col md:flex-row justify-between items-start gap-12">
+      <div class="space-y-6">
+        <h2 class="text-4xl font-extrabold tracking-tighter">Let's build<br />something <span class="text-accent">intelligent.</span></h2>
+        <div class="space-y-2">
+          <a href="mailto:ajayvasudevan.cbe@gmail.com" class="block text-lg hover:text-accent transition-colors">ajayvasudevan.cbe@gmail.com</a>
+          <div class="text-sm font-mono text-muted">+91 7418525402</div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-x-16 gap-y-4">
+        <div class="space-y-2">
+          <div class="text-[10px] font-mono uppercase text-muted">Network</div>
+          <a href="https://www.linkedin.com/in/ajay-vasudevan-8800953a1/" target="_blank" rel="noopener noreferrer" class="block text-sm font-medium hover:underline">LinkedIn</a>
+          <a href="https://github.com/ajayvasudevancbe-Datascience" target="_blank" rel="noopener noreferrer" class="block text-sm font-medium hover:underline">GitHub</a>
+        </div>
+        <div class="space-y-2">
+          <div class="text-[10px] font-mono uppercase text-muted">Location</div>
+          <div class="text-sm font-medium">Sulur, Coimbatore</div>
+          <div class="text-sm font-medium">Tamil Nadu, India</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Bottom Bar -->
+  <div class="bg-foreground text-background py-4 px-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center text-[10px] font-mono uppercase tracking-[0.2em]">
+      <span>© 2024 Ajay Vasudevan</span>
+      <span>Built with Data & Logic</span>
+    </div>
+  </div>
+</body>
+</html>
