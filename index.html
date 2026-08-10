@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ajay Vasudevan — B.Sc. Data Science portfolio." />
+  <title>Ajay Vasudevan | Data Science Portfolio</title>
+  <style>
+    :root{
+      --bg:#07110d; --panel:#0b1914; --panel2:#0e2119; --line:#1d3b2d;
+      --text:#f4f7fb; --muted:#aebdce; --blue:#22c55e; --blue2:#4ade80;
+      --shadow:0 18px 55px rgba(0,0,0,.28);
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);
+      background:radial-gradient(circle at 75% 10%,#123b28 0,transparent 30%),linear-gradient(135deg,#030806,#07150e 60%,#020805);
+      line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1400px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:20;background:rgba(3,10,7,.90);backdrop-filter:blur(14px);border-bottom:1px solid rgba(55,110,78,.35)}
+    .nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-size:1.15rem;font-weight:800}.brand span{color:var(--blue)}
+    .links{display:flex;gap:28px;align-items:center}.links a{color:#dbe6f2;font-weight:600;font-size:.94rem}
+    .links a:hover,.links a.active{color:var(--blue)}
+    .hero{min-height:510px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding:70px 0 45px}
+    .eyebrow{color:var(--blue2);font-weight:700}.hero h1{font-size:clamp(3rem,6vw,5rem);line-height:1.05;margin:10px 0}
+    .hero h2{font-size:1.45rem;margin:0 0 20px;color:#eef5fc}.hero h2 span{color:var(--blue)}
+    .hero p{font-size:1.15rem;color:var(--muted);max-width:680px}
+    .buttons{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+    .btn{padding:12px 19px;border:1px solid #31516d;border-radius:8px;font-weight:700;background:#0a1711}
+    .btn.primary{background:linear-gradient(135deg,#16a34a,#4ade80);border-color:#22c55e;color:white}
+    .btn:hover{transform:translateY(-2px);transition:.2s}
+    .visual{min-height:350px;position:relative;display:grid;place-items:center}
+    .visual:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:rgba(34,197,94,.12);filter:blur(55px)}
+    .dashboard{position:relative;width:min(500px,100%);padding:25px;border:1px solid #24553a;border-radius:18px;background:linear-gradient(145deg,rgba(10,32,21,.96),rgba(3,14,8,.94));box-shadow:var(--shadow)}
+    .avatar{width:130px;height:130px;margin:auto;border-radius:50%;display:grid;place-items:center;font-size:3rem;font-weight:800;
+      background:linear-gradient(145deg,#123a5d,#061522);border:3px solid #22c55e;box-shadow:0 0 35px rgba(34,197,94,.30)}
+    .chart{height:150px;margin-top:22px;display:flex;align-items:end;gap:10px;border-bottom:1px solid #294b37;padding:10px}
+    .bar{flex:1;background:linear-gradient(#4ade80,#15803d);border-radius:5px 5px 0 0}
+    .bar:nth-child(1){height:35%}.bar:nth-child(2){height:52%}.bar:nth-child(3){height:43%}.bar:nth-child(4){height:72%}.bar:nth-child(5){height:58%}.bar:nth-child(6){height:88%}.bar:nth-child(7){height:70%}
+    section{padding:25px 0}.grid{display:grid;gap:18px}.two{grid-template-columns:.75fr 1.25fr}
+    .card{background:linear-gradient(145deg,rgba(9,27,18,.97),rgba(4,15,9,.97));border:1px solid var(--line);border-radius:10px;padding:22px;box-shadow:var(--shadow)}
+    .title{font-size:1.35rem;margin:0 0 15px}.muted{color:var(--muted)}
+    .skills{display:grid;grid-template-columns:1fr 1fr;border:1px solid #234532;border-radius:8px;overflow:hidden}
+    .skill{display:grid;grid-template-columns:150px 1fr;padding:13px 16px;border-bottom:1px solid #234532}
+    .skill:nth-child(odd){border-right:1px solid #234532}.skill b{color:#f5f8fc}
+    .projects{grid-template-columns:repeat(4,1fr)}.project h3{margin:0 0 8px;color:#dcecff}.project p{font-size:.92rem;color:var(--muted)}
+    .tags{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.tag{font-size:.75rem;padding:4px 8px;border:1px solid #28613d;border-radius:99px;color:#65c7ff}
+    .project a,.link{color:var(--blue2);font-weight:700}
+    .bottom{grid-template-columns:1fr 1.4fr 1.1fr}.certs{display:flex;flex-wrap:wrap;gap:15px}.cert{min-width:180px;max-width:250px;text-align:center}.cert .link{display:block;font-size:.75rem;margin-top:7px}.icon{width:52px;height:52px;margin:auto auto 7px;border-radius:50%;display:grid;place-items:center;background:#10271a;border:1px solid #315d43}
+    footer{text-align:center;color:#8fa2b6;padding:35px 0 45px}
+    @media(max-width:1000px){.hero{grid-template-columns:1fr}.projects{grid-template-columns:1fr 1fr}.bottom{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+    @media(max-width:650px){.links{display:none}.hero{padding-top:45px}.skills{grid-template-columns:1fr}.skill:nth-child(odd){border-right:0}.projects{grid-template-columns:1fr}.skill{grid-template-columns:120px 1fr}}
+  
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="brand" href="#home">Ajay Vasudevan <span>&lt;/&gt;</span></a>
+    <div class="links">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#achievements">Achievements</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <section id="home" class="hero">
+    <div>
+      <div class="eyebrow">Welcome to my portfolio</div>
+      <h1>Ajay Vasudevan</h1>
+      <h2>B.Sc. Data Science | Aspiring <span>Data Analyst</span> &amp; Data Engineer</h2>
+      <p>Turning data into insights using <strong>Python, SQL, Power BI, Excel &amp; AI</strong>.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">▣ View Projects</a>
+        <a class="btn" href="https://github.com/" target="_blank">◉ GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank">in LinkedIn</a>
+        <a class="btn" href="Ajay_Vasudevan_Data_Analyst_Resume.pdf" download>↓ Download Resume</a>
+      </div>
+    </div>
+    <div class="visual">
+      <div class="dashboard">
+        <div class="avatar"><img src="ajay-profile-photo.jpg" alt="Ajay Vasudevan profile photo"></div>
+        <div class="chart" aria-label="Decorative data chart">
+          <i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i>
+        </div>
+        <p class="muted" style="text-align:center;margin:12px 0 0">Python • SQL • Power BI • Analytics</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="grid two">
+    <div class="card">
+      <h2 class="title">👤 About Me</h2>
+      <p>I am a <strong>B.Sc. Data Science student</strong> passionate about data analysis, visualization, databases, and emerging AI technologies. I enjoy working with real-world datasets, discovering patterns, and building dashboards and analytical solutions.</p>
+      <p class="muted">Currently developing practical skills in Python, SQL, Power BI, Excel, Generative AI, and Data Engineering.</p>
+    </div>
+    <div id="skills" class="card">
+      <h2 class="title">&lt;/&gt; Skills</h2>
+      <div class="skills">
+        <div class="skill"><b>Programming</b><span>Python</span></div><div class="skill"><b>Spreadsheet</b><span>Excel</span></div>
+        <div class="skill"><b>Database</b><span>SQL, MySQL</span></div><div class="skill"><b>AI</b><span>Generative AI, LLM</span></div>
+        <div class="skill"><b>Data Analysis</b><span>Pandas, NumPy</span></div><div class="skill"><b>Data Engineering</b><span>ETL, Cloud Fundamentals</span></div>
+        <div class="skill"><b>Visualization</b><span>Power BI, Matplotlib</span></div><div class="skill"><b>Concepts</b><span>Data Cleaning, EDA, Statistics</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2 class="title">💼 Featured Projects</h2>
+      <div class="grid projects">
+        <article class="card project">
+          <h3>🍦 Ice Cream Sales-Analytics Dashboard</h3>
+          <p>Analyzed healthcare data to identify operational trends, patient information, and key performance indicators using advanced SQL.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">CTE</span><span class="tag">Joins</span><span class="tag">Window Functions</span></div>
+          <a href="https://github.com/ajayvasudevancbe-Datascience/Ice-Cream-Sales-Analytics-Dashboard" target="_blank">GitHub →</a>
+        </article>
+        <article class="card project">
+          <h3>Product Review Sentiment Analysis Transformers.</h3>
+          <p>👍A sentiment analysis project that classifies customer product reviews into Positive, Neutral, and Negative sentiments using Sentence Transformers and Machine Learning classifiers.</p>
+          <div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">DAX</span></div>
+          <a href="https://github.com/ajayvasudevancbe-Datascience/Product_Review_Sentiment_Analysis_Transformers." target="_blank">GitHub →</a> &nbsp; <a href="#" >Live Dashboard →</a>
+        </article>
+        <article class="card project">
+          <h3>🛒 Waitrose-Retail-Data-Engineering</h3>
+          <p>Developed a Python-based data engineering project using Pandas to load, clean, analyze, and visualize the Waitrose dataset, including data preprocessing, price standardization, statistical analysis, and visualization.
+</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span></div>
+          <a href="https://github.com/ajayvasudevancbe-Datascience/Waitrose-Retail-Data-Engineering" target="_blank">GitHub →</a>
+        </article>
+        <article class="card project">
+          <h3>🤖 Health Insurance Premium Prediction.</h3>
+          <p>Developed a machine learning project to predict health insurance premiums based on factors such as age, BMI, smoking status, and other personal attributes.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span></div>
+          <a href="https://github.com/ajayvasudevancbe-Datascience/Health-Insurance-Premium-Prediction." target="_blank">GitHub →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" style="padding-top:0">
+    <div class="card" style="text-align:center">
+      <h2 class="title">📄 My Resume</h2>
+      <p class="muted">Download my latest Data Analyst resume for a complete overview of my education, skills, projects, certifications, and achievements.</p>
+      <div class="buttons" style="justify-content:center">
+        <a class="btn primary" href="Ajay_Vasudevan_Data_Analyst_Resume.pdf" target="_blank">View Resume →</a>
+        <a class="btn" href="Ajay_Vasudevan_Data_Analyst_Resume.pdf" download>↓ Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="grid bottom">
+    <div class="card">
+      <h2 class="title">🏆 Achievement</h2>
+      <strong>RVS JPL’25 – RVS Java Premier League 2025</strong>
+      <p class="muted">Participant — School of Computer Studies, RVS College of Arts and Science | March 2025</p>
+    </div>
+    <div id="certifications" class="card">
+      <h2 class="title">🏅 Certifications</h2>
+      <div class="certs">
+        <div class="cert">
+          <div class="icon">GL</div>
+          <small>Data Visualization with Power BI</small>
+          <a class="link" href="https://www.mygreatlearning.com/certificate/OBNJCPCM?referrer_code=GLKX_JFYHHTJU" target="_blank">View Certificate →</a>
+        </div>
+        <div class="cert">
+          <div class="icon">GL</div>
+          <small>Data Science Foundations</small>
+          <a class="link" href="https://www.mygreatlearning.com/certificate/HUYARXXX?referrer_code=GLKX_JFYHHTJU" target="_blank">View Certificate →</a>
+        </div>
+        <div class="cert">
+          <div class="icon">JPL</div>
+          <small>RVS JPL’25 – RVS Java Premier League 2025</small>
+          <span class="muted" style="display:block;font-size:.75rem;margin-top:5px">Participant · March 2025</span>
+          <a class="link" href="RVS_JPL_25_Certificate.jpg" target="_blank">View Certificate →</a>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="card">
+      <h2 class="title">✉ Contact</h2>
+      <p><a class="link" href="mailto:ajayvasudevan.cbe@gmail.com">ajayvasudevan.cbe</a></p>
+      <p><a class="link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+      <p><a class="link" href="https://github.com/" target="_blank">GitHub</a></p>
+      <p class="muted">Open to: Data Analyst • Data Science • Data Engineering • Internship opportunities</p>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Ajay Vasudevan. All rights reserved. · <a class="link" href="#home">↑ Back to Top</a></footer>
+</body>
+</html>
